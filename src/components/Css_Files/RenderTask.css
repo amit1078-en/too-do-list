@@ -1,0 +1,35 @@
+#boxx
+{
+    color:white;
+    background-color: black;
+}
+#colorbutton
+{
+    background-color: rgba(125, 241, 187, 0.951) ;
+    
+    border-radius: 7px;
+    color: black;
+}
+#colorbutton:hover
+{
+    background-color: hsla(355, 65%, 64%, 0.654) ;
+    color: white;
+    border-radius: 10px;
+}
+#clrbtn
+{
+    background-color: rgba(125, 241, 187, 0.951) ;
+    
+    border-radius: 7px;
+    color: black;
+}
+#clrbtn:hover
+{
+    background-color: hsla(355, 65%, 64%, 0.654) ;
+    color: white;
+    border-radius: 10px;
+}
+#selectors
+{
+    padding-left:1200px;
+}

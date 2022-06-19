@@ -1,0 +1,90 @@
+#boxx{
+  margin-left: 100px;
+  margin-right:100px;
+}
+#inlinee{
+  display: inline;
+}
+#searchbox
+{
+  display:block;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#rounder-corner
+{
+  border-radius: 20px;
+}
+#boxx
+{
+    color:white;
+    background-color: black;
+}
+#colorbutton
+{
+    background-color: rgba(125, 241, 187, 0.951) ;
+    
+    border-radius: 7px;
+    color: black;
+}
+#colorbutton:hover
+{
+    background-color: hsla(355, 65%, 64%, 0.654) ;
+    color: white;
+    border-radius: 10px;
+}
+#rightbox
+{
+    padding-top: 10px;
+    padding-left: 75%;
+}
+#searchbarr
+{
+  margin:15px 580px;
+  width:200px;
+  border-radius: 15px;
+}
+#searchbarr:hover
+{
+  margin:15px 500px;
+  width:400px;
+  border-radius: 15px;
+}

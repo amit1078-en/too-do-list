@@ -1,24 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
-
-function App() {
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import Login from './components/JavaScript_Files/Login';
+import PageNotFound from './components/JavaScript_Files/PageNotFound'
+import AddTask from './components/JavaScript_Files/AddTask';
+import Navbar from './components/JavaScript_Files/Navbar';
+import TaskList from './components/JavaScript_Files/TaskList';
+function App() 
+{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        <Routes>
+              <Route path="/" element={<Navigate replace to="/Login" />} />
+              <Route path="/login" element={<Login/>} />
+              <Route path="/AddTask" element={<AddTask/>} />
+              <Route path="/TaskList" element={<TaskList/>} />
+              <Route path="/Navbar" element={<Navbar/>} />
+              <Route path="*" element={<Navigate replace to="/PageNotFound" />} />
+              <Route path="/PageNotFound" element={<PageNotFound />} />
+        </Routes>
+    </Router>
   );
 }
 
